@@ -97,3 +97,23 @@ form{
     text-decoration: none;
     color: black;
 }
+
+
+.featureProducts{
+    height: 103px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 1px 1px 1px rgba(0,0,0,0.15);
+
+}
+.featureProductImage{
+    width: 60px;
+}
+.featureProductImage img{
+    width: 100%;
+}
+.featureProductName p{
+    font-size: 18px;
+
+}
