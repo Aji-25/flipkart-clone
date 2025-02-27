@@ -9,10 +9,15 @@
     display: flex;
     flex-direction: row;
     margin: 2px;
+    padding-bottom: 10px;
+}
+.logo img{
+    margin-right: 60px;
 }
 form{
     width: 100%;
 }
+
 .header{
     background-color: #2874f0;
     padding: 0px;
@@ -73,14 +78,61 @@ form{
 }
 .loginBtn_container{
     background-color: white;
-    padding: 7px 40px;
-    font-size: 18px;
-    border-radius: 2px;
+    padding: 6px 35px;
+    font-size: 15px;
+    border-radius: 1px;
+    margin:0px 10px;
+    position: relative;
 }
 .loginBtn_container a{
-    color: black    ;
+    color: black;
     font-weight: 550;
     text-decoration: none;
+    font-size: 18px;
+}
+.login_menu{
+    position: absolute;
+    top:34px;
+    height: 320px;
+    width: 100%;
+    width: 330px;
+    background-color: transparent;
+    margin-left: -40px;
+    transform: translateX(-25%);
+    display: none;
+    padding-top: 15px;
+    z-index:12;
+}
+.login_menu::before{
+    position: absolute;
+    content: "";
+    margin-left: 110px;
+    top:1px;
+    border-top:0px solid transparent;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-bottom: 10px solid white;
+}
+.loginBtn_container:hover .login_menu{
+    display: block;
+}
+.login_menu_list{
+    height: 100%;
+    max-width: 100%;
+    background-color: white;
+    box-shadow: -5px -0px 5px rgba(0,0,0,0.1),
+    5px 5px 5px rgba(0,0,0,0.1);
+    padding: 5px 20px;
+    font-size: 15px;
+    
+}
+.login_menu_top{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+.login_menu_top a:hover{
+    text-decoration: underline;
 }
 .nav-link{
     margin: 0px 20px;
@@ -96,14 +148,19 @@ form{
 .cart-link a{
     text-decoration: none;
     color: black;
+    font-size: 18px;
 }
 
 
+.featureProductsList{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0px 150px;
+}
+
 .featureProducts{
     height: 103px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
     box-shadow: 1px 1px 1px rgba(0,0,0,0.15);
 
 }
@@ -115,5 +172,60 @@ form{
 }
 .featureProductName p{
     font-size: 18px;
+    color: black;
+}
+.featureProductItem a{
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+}
+#carouselExampleIndicators{
+    padding:10px;
+    margin: 10px;
+    box-shadow: 1px 1px 1px rgba(0,0,0,0.15);
+}
+.Allitem{
+    display: flex;
+    justify-content: space-between;
+    padding:15px;
+    margin: 10px;
+   
+}
+.item{
+    outline: none;
+}
+.item-body{
+    text-decoration: none;
+    color: black;
+    text-align: center;
+}
+.item-text{
+    font-weight: bolder;
+    font-size: 15px;
+    text-decoration: none;
+}
+.item-title{
+    font-size: 15px;
+    text-decoration: none;
+}
+.itemSection{
+    outline: black;
+    padding:10px;
+    margin: 10px;
+    box-shadow: 1px 1px 1px rgba(0,0,0,0.15);
+}
+.item img{
+    padding:10px;
+    height: 200px;
+    width: 200px;
+}
 
+
+.item h6{
+    text-decoration: none;
+    color: black;    
+}
+.adcard img{
+    height: 375px;
+    width: 250px;
 }

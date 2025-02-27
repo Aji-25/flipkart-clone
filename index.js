@@ -6,7 +6,7 @@ let recentSearchEl = document.querySelector(".recent-search");
 
 let recentArray = ["mobile", "phone"];
 
-fsearch.addEventListener(submit, (e) => {
+fsearch.addEventListener("submit", (e) => {
     e.preventDefault()
     recentArray.unshift(isearch.value)
     renderRecent()
